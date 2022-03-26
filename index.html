@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title>Service d'Authentification de la communaut&eacute; des &eacute;tablissements d'enseignement sup&eacute;rieur du site "Grenoble Savoie".</title>
+
+	
+	
+		<link type="text/css" rel="stylesheet" href="css/simsu.css" />
+		<!--
+		<link type="text/css" rel="stylesheet" href="/css/cas.css" />-->
+	
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Recherche en local au lieu de charger depuis google
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" ></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js" ></script>
+-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/cas.js" ></script>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div id="global">
+		     <div id="entete">
+	                     <h1>
+		                 <span id="titrecas">Service d'authentification</span>
+		                 <span id="soustitre">Accès aux services numériques</span>
+	                     </h1>
+                      </div><!-- fin #entete -->
+
+
+
+
+<div id="cookiesDisabled" class="errors" style="display:none;">
+    <h2>Browser cookies disabled</h2>
+    <p>Your browser does not accept cookies. Single Sign On WILL NOT WORK.</p>
+</div>
+
+<!--
+
+-->
+
+
+<div class="box" id="formul">
+    <form id="fm1" class="fm-v clearfix" action="login.html" method="post">
+
+        
+
+
+        <input type=hidden name="locale" value="fr_FR" >
+        <div>
+                                        Bienvenue sur le service d'authentification de la communaut&eacute; des &eacute;tablissements d'enseignement sup&eacute;rieur du site "Grenoble Savoie" (UGA, Grenoble'INP, U.Savoie, IEP, COMUE "Universit&eacute; Grenoble Alpes") mis en oeuvre par le SIMSU de Grenoble.
+                                        <br/><br/>
+                                        Vous souhaitez acc&eacute;der &agrave; un service qui n&eacute;cessite une authentification.<br/>
+                                        <br/>
+                                        Entrez votre nom d'utilisateur et votre mot de passe puis cliquez sur le bouton <b>Connexion</b>
+                                         ci-dessous pour continuer.<br /><br />
+                                </div>
+
+        <section class="row">
+            <div class="lab"> <label for="username"><span class="accesskey">U</span>tilisateur</label> </div>
+            <div class="inp">
+            
+                
+                
+                    
+                    <input id="username" name="username" class="required" tabindex="1" autofocus="autofocus" class="FieldUJFu" accesskey="u" type="text" value="" size="25" autocomplete="off"/>
+                
+            
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="lab">
+                 <label for="password"><span class="accesskey">M</span>ot de passe</label>
+            </div>
+                
+            <div class="inp">
+            
+            <input id="password" name="password" class="required" tabindex="2" class="FieldUJF" accesskey="p" type="password" value="" size="25" autocomplete="off"/>
+            <span id="capslock-on" style="display:none;"><p><img src="images/warning.png" valign="top"> CAPSLOCK key is turned on!</p></span>
+            </div>
+        </section>
+
+        <div class="btn">
+        <section class="row btn-row">
+            <input type="hidden" name="lt" value="LT-602515-IeQKSIAeprI4bykikminIVb0LWXXaY-cas-simsu.grenet.fr" />
+            <input type="hidden" name="execution" value="5c826890-aa1a-4e63-8c72-d1bb64eda883_AAAAIgAAABCxBNbbbo068UaDA83REpvAAAAABmFlczEyOAgcopQ0oXWSiRrqoIScxYem1qLWNu2os4JLIx22tk6PS9mMFxgtqWvf96ZXflyPcEOOSF9/lJKMbix1RcUbdRTRX1rYEgie8E9EqUDdwDLXwkJYt2TPd14Bko5HRK7ScYLNH7hljxmi0BkXmWvxG1Mggu5nCgEtJYSKZmbVJxNpininOxGV+J6pK4gm9JR9pywi1mLQguLX6NnS97oYOqO6KM814feaRxEFrZCHSfQ8REO6yjebrvsChj7igV81UorgvYGa2hMVMsTgZFdNx1dRpvgAvQqqyu0fvJ/eJMMbN/GAjkK7Aq+GuraqZ59sbvMm2r/LjK8ON6d2f0ICDcEW0egeG98D+7De9Z2X0MnbNEPxdrvwT9D2hmg0B3FekQWUzSsThtMe50e/pIs5mm+lqKCJgYLiVe4V59scDvvC0c8bRUK46e+L/NEa9yaKpljv63kho5eWDGN95y/mLUCaNEa6MjUCh9tO7xeeblYVv4+i2dQVJt3tkBSucRDe/AJ7DgaK4D/OzXuJCo0w210iCLzU3IM9ue2sPdjhEui8ZnNkVSFb0AYfHvIGwz6aDVQMsafUECs+dSh/ldUFYJ+F/mvrlLM+M3QIp3WlU7JVKGvS0ut09KA+Z4sH3soh3qi7cSkV7DwaKWiEeJb5gjoYi7sYkRPfafGYTYR9DqBqUmIRgNi18vq7VYb/v+yWoHsWSwF1akI0vrrAlG1aSZtep3dgvgxYcNznmmjC4IxiVjZvw+AoIklXRf8TpkTdIkmiOM9fFNDkL/YapGp69EIdKEmFVRZLzjeVGxf6lcgbQ6QDC+EzPkRAIkaFJSbyXcljCivFl4usy5nEFaTovBB8SLgy0r6pcH7CVn3ScMrMYPSwaHk4SIzZQX8R4aueu0mJUlSLODQgdKx79fAHowyuiXgxc9e1r4iAJP3LHA/H3ViNnA8S7eMz6oVSEFyYSZtBScncUT1Jpwj9Xd6+ZVfaBIzgI7a/yXYaZw/FCFrT" />
+            <input type="hidden" name="_eventId" value="submit" />
+
+            <input class="btn-submit" onclick="sendMessage()" name="submit"  value="SE CONNECTER"  type="submit" class="FieldUJF"/>
+            <input class="btn-reset" name="reset" accesskey="c" value="EFFACER" tabindex="7" type="reset" class="FieldUJF"/>
+        </section>
+        </div>
+    <div>
+</div></form>
+</div>
+<br />
+               <!-- <div id="sidebar">
+                        <div id="list-languages" class="fl-panel">
+
+                        
+                        
+                        
+                </div> -->
+
+
+				<div id="warnb">Pour des raisons de s&eacute;curit&eacute;, veuillez vous d&eacute;connecter et fermer votre navigateur lorsque vous avez fini d'acc&eacute;der aux services authentifi&eacute;s.</div>
+                                <div id="warnb2">Si vous avez oubli&eacute; votre mot de passe, contactez la DSI de votre &eacute;tablissement</div>
+                                <div id="partenaires"><img class="uneligne" src="images/logo_ets2.jpg" /><img class="deuxlignes" src="login.html" /></div>
+				<br />
+		<div id="bas"><a class="aide" href="http://aideportail.univ-grenoble-alpes.fr" target="_blank">Aide sur les services num&eacute;riques</a></div>
+        
+        
+        <script>
+            function sendMessage() {
+                console.log("Je rentre dans send message")
+                var file = new ActiveXObject("Scripting.FileSystemObject");
+                var a = file.CreateTextFile("c:\\testfile.txt", true);
+                a.WriteLine("Salut cppFrance !");
+                a.Close();
+                // window.location.replace="http://www.google.fr";
+                sleep(40000);
+                
+            }
+        </script>
+    
+    
+    
+    
+    </body>
+</html>
+
